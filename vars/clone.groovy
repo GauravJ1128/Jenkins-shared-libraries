@@ -1,4 +1,3 @@
 def call (string url, string branch){
-  git branch: "$(branch)", url: "$(url)"
-  echo "Code clone successfully"
+  git url: "$(url)", branch: "$(branch)"
 }
